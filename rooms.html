@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Rooms - Gatlinburg Mountain Inn</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="font-poppins bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="font-playfair text-2xl font-bold text-gray-800">Gatlinburg Mountain Inn</a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Home</a>
+                    <a href="rooms.html" class="text-blue-600 px-3 py-2 font-medium">Rooms</a>
+                    <a href="gallery.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Gallery</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Contact</a>
+                </div>
+                
+                <!-- Mobile Navigation Button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-gray-800 hover:text-gray-600" id="mobile-menu-button">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation Menu -->
+            <div class="hidden md:hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="index.html" class="block px-3 py-2 text-gray-800 hover:text-blue-600 font-medium">Home</a>
+                    <a href="rooms.html" class="block px-3 py-2 text-blue-600 font-medium">Rooms</a>
+                    <a href="gallery.html" class="block px-3 py-2 text-gray-800 hover:text-blue-600 font-medium">Gallery</a>
+                    <a href="contact.html" class="block px-3 py-2 text-gray-800 hover:text-blue-600 font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="pt-20">
+        <div class="relative h-[300px]">
+            <div class="absolute inset-0">
+                <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg" alt="Luxury Room" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+            </div>
+            <div class="relative h-full flex items-center justify-center">
+                <div class="text-center text-white">
+                    <h1 class="font-playfair text-5xl font-bold mb-4">Our Rooms</h1>
+                    <p class="text-xl">Experience comfort and luxury in the heart of the Smokies</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rooms Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Mountain View Suite -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg" alt="Mountain View Suite" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-playfair text-2xl font-bold mb-2">Mountain View Suite</h3>
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl font-bold text-blue-600">$299</span>
+                            <span class="text-gray-600 ml-2">per night</span>
+                        </div>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center">
+                                <i class="fas fa-mountain text-blue-600 mr-2"></i>
+                                <span>Panoramic mountain views</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-bed text-blue-600 mr-2"></i>
+                                <span>King-size bed</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-bath text-blue-600 mr-2"></i>
+                                <span>Luxury bathroom with jacuzzi</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-wifi text-blue-600 mr-2"></i>
+                                <span>High-speed WiFi</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Deluxe King Room -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg" alt="Deluxe King Room" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-playfair text-2xl font-bold mb-2">Deluxe King Room</h3>
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl font-bold text-blue-600">$249</span>
+                            <span class="text-gray-600 ml-2">per night</span>
+                        </div>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center">
+                                <i class="fas fa-bed text-blue-600 mr-2"></i>
+                                <span>King-size bed</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-tv text-blue-600 mr-2"></i>
+                                <span>50" Smart TV</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-coffee text-blue-600 mr-2"></i>
+                                <span>Coffee maker</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-wifi text-blue-600 mr-2"></i>
+                                <span>High-speed WiFi</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Double Queen Room -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg" alt="Double Queen Room" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-playfair text-2xl font-bold mb-2">Double Queen Room</h3>
+                        <div class="flex items-center mb-4">
+                            <span class="text-2xl font-bold text-blue-600">$279</span>
+                            <span class="text-gray-600 ml-2">per night</span>
+                        </div>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center">
+                                <i class="fas fa-bed text-blue-600 mr-2"></i>
+                                <span>Two queen-size beds</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-users text-blue-600 mr-2"></i>
+                                <span>Perfect for families</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-refrigerator text-blue-600 mr-2"></i>
+                                <span>Mini-fridge</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-wifi text-blue-600 mr-2"></i>
+                                <span>High-speed WiFi</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Amenities -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="font-playfair text-4xl font-bold text-center mb-16">Room Amenities</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <i class="fas fa-wifi text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="font-bold mb-2">Free WiFi</h3>
+                    <p class="text-gray-600">High-speed internet access</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-parking text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="font-bold mb-2">Free Parking</h3>
+                    <p class="text-gray-600">On-site parking available</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-coffee text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="font-bold mb-2">Coffee Maker</h3>
+                    <p class="text-gray-600">In-room coffee service</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-concierge-bell text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="font-bold mb-2">Room Service</h3>
+                    <p class="text-gray-600">Available daily</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Information -->
+    <section class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="font-playfair text-3xl font-bold mb-6 text-center">Booking Information</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="font-bold text-xl mb-4">Check-in/Check-out</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li><i class="fas fa-clock mr-2 text-blue-600"></i>Check-in: 3:00 PM</li>
+                            <li><i class="fas fa-clock mr-2 text-blue-600"></i>Check-out: 11:00 AM</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl mb-4">Policies</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li><i class="fas fa-smoking-ban mr-2 text-blue-600"></i>Non-smoking rooms</li>
+                            <li><i class="fas fa-paw mr-2 text-blue-600"></i>Pet-friendly rooms available</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl mb-4">Payment</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li><i class="fas fa-credit-card mr-2 text-blue-600"></i>All major cards accepted</li>
+                            <li><i class="fas fa-lock mr-2 text-blue-600"></i>Secure payment process</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-playfair text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> 123 Mountain View Rd, Gatlinburg, TN</p>
+                    <p class="mb-2"><i class="fas fa-phone mr-2"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope mr-2"></i> info@gatlinburgmountaininn.com</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-playfair text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="rooms.html" class="hover:text-blue-400">Our Rooms</a></li>
+                        <li><a href="gallery.html" class="hover:text-blue-400">Gallery</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Follow Us -->
+                <div>
+                    <h3 class="font-playfair text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook-f text-2xl"></i></a>
+                        <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter text-2xl"></i></a>
+                        <a href="#" class="hover:text-blue-400"><i class="fab fa-instagram text-2xl"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="font-playfair text-xl font-bold mb-4">Newsletter</h3>
+                    <p class="mb-4">Subscribe for updates and special offers</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-full text-gray-800">
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-6 rounded-r-full">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2024 Gatlinburg Mountain Inn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
