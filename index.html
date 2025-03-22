@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatlinburg Mountain Inn - Your Perfect Mountain Getaway</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="font-poppins">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <h1 class="font-playfair text-2xl font-bold text-gray-800">Gatlinburg Mountain Inn</h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Home</a>
+                    <a href="rooms.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Rooms</a>
+                    <a href="gallery.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Gallery</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-blue-600 px-3 py-2 font-medium">Contact</a>
+                </div>
+                
+                <!-- Mobile Navigation Button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-gray-800 hover:text-gray-600" id="mobile-menu-button">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation Menu -->
+            <div class="hidden md:hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="index.html" class="block px-3 py-2 text-gray-800 hover:text-blue-600 font-medium">Home</a>
+                    <a href="rooms.html" class="block px-3 py-2 text-gray-800 hover:text-blue-600 font-medium">Rooms</a>
+                    <a href="gallery.html" class="block px-3 py-2 text-gray-800 hover:text-blue-600 font-medium">Gallery</a>
+                    <a href="contact.html" class="block px-3 py-2 text-gray-800 hover:text-blue-600 font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-screen">
+        <div class="absolute inset-0">
+            <img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg" alt="Mountain View" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 h-full flex items-center">
+            <div class="text-white">
+                <h2 class="font-playfair text-5xl md:text-6xl font-bold mb-4">Welcome to Paradise</h2>
+                <p class="text-xl md:text-2xl mb-8 max-w-2xl">Experience the beauty of the Smoky Mountains at Gatlinburg Mountain Inn. Your perfect mountain getaway awaits.</p>
+                <a href="rooms.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                    Book Your Stay
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="font-playfair text-4xl font-bold text-center mb-16 text-gray-800">Why Choose Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Feature 1 -->
+                <div class="text-center">
+                    <div class="bg-white rounded-lg p-8 shadow-lg">
+                        <i class="fas fa-mountain text-5xl text-blue-600 mb-6"></i>
+                        <h3 class="font-playfair text-2xl font-bold mb-4">Breathtaking Views</h3>
+                        <p class="text-gray-600">Wake up to stunning mountain vistas and natural beauty right outside your window.</p>
+                    </div>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="text-center">
+                    <div class="bg-white rounded-lg p-8 shadow-lg">
+                        <i class="fas fa-bed text-5xl text-blue-600 mb-6"></i>
+                        <h3 class="font-playfair text-2xl font-bold mb-4">Luxurious Comfort</h3>
+                        <p class="text-gray-600">Experience comfort in our well-appointed rooms with modern amenities.</p>
+                    </div>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="text-center">
+                    <div class="bg-white rounded-lg p-8 shadow-lg">
+                        <i class="fas fa-map-marker-alt text-5xl text-blue-600 mb-6"></i>
+                        <h3 class="font-playfair text-2xl font-bold mb-4">Prime Location</h3>
+                        <p class="text-gray-600">Minutes away from Gatlinburg's attractions and the Great Smoky Mountains.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg" alt="Hotel Interior" class="rounded-lg shadow-lg">
+                </div>
+                <div>
+                    <h2 class="font-playfair text-4xl font-bold mb-6 text-gray-800">Your Mountain Retreat</h2>
+                    <p class="text-gray-600 mb-6">Nestled in the heart of the Great Smoky Mountains, Gatlinburg Mountain Inn offers a perfect blend of comfort, luxury, and natural beauty. Our inn provides the ideal base for exploring all that Gatlinburg has to offer.</p>
+                    <p class="text-gray-600 mb-8">Whether you're seeking adventure in the mountains or a peaceful retreat, our accommodations and friendly staff ensure an unforgettable stay.</p>
+                    <a href="contact.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-blue-600">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="font-playfair text-4xl font-bold text-white mb-6">Ready for Your Mountain Adventure?</h2>
+            <p class="text-white text-xl mb-8">Book your stay today and create lasting memories in the Smoky Mountains.</p>
+            <a href="rooms.html" class="inline-block bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-8 rounded-full transition duration-300">
+                View Our Rooms
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-playfair text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> 123 Mountain View Rd, Gatlinburg, TN</p>
+                    <p class="mb-2"><i class="fas fa-phone mr-2"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope mr-2"></i> info@gatlinburgmountaininn.com</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-playfair text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="rooms.html" class="hover:text-blue-400">Our Rooms</a></li>
+                        <li><a href="gallery.html" class="hover:text-blue-400">Gallery</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Follow Us -->
+                <div>
+                    <h3 class="font-playfair text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook-f text-2xl"></i></a>
+                        <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter text-2xl"></i></a>
+                        <a href="#" class="hover:text-blue-400"><i class="fab fa-instagram text-2xl"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="font-playfair text-xl font-bold mb-4">Newsletter</h3>
+                    <p class="mb-4">Subscribe for updates and special offers</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-full text-gray-800">
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-6 rounded-r-full">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2024 Gatlinburg Mountain Inn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
